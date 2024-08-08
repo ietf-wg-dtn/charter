@@ -1,35 +1,66 @@
-The Delay/Disruption Tolerant Network Working Group (DTNWG) specifies
+The Delay/Disruption Tolerant Networking (DTN) Working Group specifies
 mechanisms for data communications in the presence of long delays and/or
-intermittent connectivity. Delay-Tolerant Networking (DTN) protocols
-have been the subject of extensive research and development in the
-Delay-Tolerant Networking Research Group (DTNRG) of the Internet
-Research Task Force since 2002.  The key documents are the DTN
-Architecture  (RFC 4838), the Bundle Protocol (RFC 5050), Licklider
-Transmission Protocol (RFC 5326) and convergence layers (RFC 7122,
-7242). Multiple independent implementations exist for these technologies
-and multiple deployments in space and terrestrial environments.  There
-is an increase interest in the commercial world for these technologies,
-for similar and different use cases, such as unmanned air vehicles.  In
-this context, there is a need to update the base specifications, i.e.,
-RFC 5050, RFC 7122, RFC 7242, RFC 6257 and RFC 6260,  based on the
-deployment and implementation experience as well as the new use cases. 
-Moreover, there is also a need to have standards track documents for the
-market.
+intermittent connectivity. The Working Group has published the Bundle Protocol
+v7 (BPv7), corresponding Bundle Protocol Security protocol (BPSec) and an
+interoperable Security Context, and the TCP Convergence Layer specifications
+as standards track RFCs. Multiple independent implementations
+exist for these technologies in both space and terrestrial
+environments, and the technology is now used in production by governments and
+commercial organizations world-wide.
 
-Therefore, the purpose of this working group is to update the base
-specifications in light of implementation experience. The group shall
-do a review of deployment problems and lessons learned, come to
-consensus on the issues to be addressed in the base protocol
-documents, and update the specifications accordingly. The group shall
-not endeavour to change the underlying architecture or the bundle
-protocol principle.
+This Working Group now focuses on the further work relevant to the area of
+Delay/Disruption Tolerant Networking, dividing work items into 3
+broad categories:
 
-Work items are:
+* An architecture for Naming, Addressing and Forwarding
 
-o  Agree to a list of use cases for evolving the DTN specifications and
-    a list of work items to be worked on.
+  The Bundle Protocol v7 defines an encoding of Names for use in DTN, but the
+  detailed semantics have not been specified. The Working Group will define
+  a common architecture for the delay/disruption tolerant assignment of
+  names, and the late-binding of such names during bundle forwarding to
+  end-points within a DTN. This architecture will define a model
+  for the forwarding process of a Bundle Process Agent, providing an
+  informational reference point for further specifications.
 
-o  Create updates to RFC5050, convergence layer RFCs, and security
-    (RFC6257), as standard track documents.
+  The Working Group charter intentionally excludes topics related to Routing
+  in DTNs. This does not preclude discussion of the subject, in coordination
+  with the Routing Area, but no Working Group documents will be adopted under
+  this charter.
 
-o  Document a registry for DTN Service Identifiers.
+* The definition of an architecture and protocols in the areas of Operations,
+  Administration, and Management (OAM), and Key Management
+
+  Current DTN deployments rely on the use of pre-placed keys and
+  configuration or bespoke tooling, and there is a growing demand for
+  standards to improve the automation and reliability of DTN management.
+  Existing IETF protocols for OAM and Key Management generally rely on a
+  bi-directional end-to-end path between devices, and in Delay/Disruption
+  Tolerant Networks (DTNs) such paths rarely exist. To enable OAM and Key
+  Management in such cases, there may be a need to standardize an
+  architecture supporting alternative methods and their supporting protocols
+  and data models. The Working Group will liaise with relevant experts in
+  the OPS Area to discover if there are existing standards that meet, or may
+  be extended to meet, the DTN use-cases before standardizing new protocols.
+  There is also believed to be cross-over between the use-cases for OAM and
+  Key Management in DTNs and the use-cases in Mobile Ad-hoc Networks
+  (MANETs); to this end the Working Group will coordinate with the MANET
+  Working Group to explore potential synergies and avoid duplication of
+  effort.
+
+* Extensions to and best practices for existing protocols
+
+  Extensions to the Bundle Protocol to enable reliability signalling,
+  tunnelling and Quality of Service indication are needed for the operational
+  deployment of Delay/Disruption Tolerant Networks, and these capabilities
+  will be standardized by the Working Group.
+
+  Additional extensions to the Bundle Protocol, additional Security Context
+  definitions for BPSec, and new Convergence Layer adapters will be
+  considered on a case-by-case basis by the working group.
+
+  The Working Group will also document best practices learned from existing
+  deployments.
+
+The Working Group will coordinate with other IETF Working Groups, especially in the Security, Routing, Operation and Management Areas, to ensure the quality of
+peer review, the avoidance of duplication of effort, and alignment with
+specifications produced in other Working Groups.
