@@ -1,0 +1,35 @@
+The Delay/Disruption Tolerant Network Working Group (DTNWG) specifies
+mechanisms for data communications in the presence of long delays and/or
+intermittent connectivity. Delay-Tolerant Networking (DTN) protocols
+have been the subject of extensive research and development in the
+Delay-Tolerant Networking Research Group (DTNRG) of the Internet
+Research Task Force since 2002.  The key documents are the DTN
+Architecture  (RFC 4838), the Bundle Protocol (RFC 5050), Licklider
+Transmission Protocol (RFC 5326) and convergence layers (RFC 7122,
+7242). Multiple independent implementations exist for these technologies
+and multiple deployments in space and terrestrial environments.  There
+is an increase interest in the commercial world for these technologies,
+for similar and different use cases, such as unmanned air vehicles.  In
+this context, there is a need to update the base specifications, i.e.,
+RFC 5050, RFC 7122, RFC 7242, RFC 6257 and RFC 6260,  based on the
+deployment and implementation experience as well as the new use cases. 
+Moreover, there is also a need to have standards track documents for the
+market.
+
+Therefore, the purpose of this working group is to update the base
+specifications in light of implementation experience. The group shall
+do a review of deployment problems and lessons learned, come to
+consensus on the issues to be addressed in the base protocol
+documents, and update the specifications accordingly. The group shall
+not endeavour to change the underlying architecture or the bundle
+protocol principle.
+
+Work items are:
+
+o  Agree to a list of use cases for evolving the DTN specifications and
+    a list of work items to be worked on.
+
+o  Create updates to RFC5050, convergence layer RFCs, and security
+    (RFC6257), as standard track documents.
+
+o  Document a registry for DTN Service Identifiers.
